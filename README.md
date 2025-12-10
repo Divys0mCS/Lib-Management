@@ -150,7 +150,7 @@ Possible enhancements include:
 
    ✔ Adding file/database storage
 
-   ✔ Adding a GUI (Tkinter)
+   ✔ Adding a GUI
 
    ✔ Preventing duplicate entries
 
