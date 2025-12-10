@@ -8,57 +8,57 @@ The objective of this project was to validate my understanding of Python basics 
 
 The system supports the following operations:
 
-Add books to the library
+1. Add books to the library
 
-Register new members
+2. Register new members
 
-Issue books to members
+3. Issue books to members
 
-Return issued books
+4. Return issued books
 
-Check availability of a specific book
+5. Check availability of a specific book
 
-Display all books
+6. Display all books
 
-Display all registered members
+7. Display all registered members
 
 All records are stored in runtime using Python lists and dictionaries.
 
 # Technologies Used
 
-Python (Core)
+✔ Python (Core)
 
-Lists, Dictionaries
+✔ Lists, Dictionaries
 
-Procedural Programming
+✔ Procedural Programming
 
-Basic input/output
+✔ Basic input/output
 
-Loop and conditional statements
+✔ Loop and conditional statements
 
 No external libraries or databases are used.
 
 # How the Logic Works
 
-Books and members are stored in Python lists.
+✔ Books and members are stored in Python lists.
 
-Borrowed books are tracked using a dictionary that maps member IDs to a list of issued book IDs.
+✔ Borrowed books are tracked using a dictionary that maps member IDs to a list of issued book IDs.
 
-Issuing a book reduces quantity.
+✔ Issuing a book reduces quantity.
 
-Returning a book increases quantity.
+✔ Returning a book increases quantity.
 
 All functionality is driven through a simple menu loop in the console.
 
 # How to Run
 
-Make sure Python is installed on your system.
+1. Make sure Python is installed on your system.
 
-Download or clone this repository.
+2. Download or clone this repository.
 
-Open a terminal/command prompt inside the project folder.
+3. Open a terminal/command prompt inside the project folder.
 
-Run the script using:
+4. Run the script using:
 
 ```bash
 $ python library_management.py
@@ -148,13 +148,13 @@ Exiting the program.
 
 Possible enhancements include:
 
-Adding file/database storage
+   ✔ Adding file/database storage
 
-Adding a GUI (Tkinter)
+   ✔ Adding a GUI (Tkinter)
 
-Preventing duplicate entries
+   ✔ Preventing duplicate entries
 
-Searching by title or author
+   ✔ Searching by title or author
 
 # Author
 
