@@ -60,8 +60,9 @@ Open a terminal/command prompt inside the project folder.
 
 Run the script using:
 
-        python library_management.py
-
+```bash
+$ python library_management.py
+```
 
 # Project Purpose
 
@@ -69,6 +70,7 @@ This project was created as part of my Class 12 Computer Science board assignmen
 
 # Sample Output
 
+```bash
 $ python library_management.py
 
 Library Management System
@@ -140,7 +142,7 @@ Library Management System
 8. Exit
 Enter your choice: 8
 Exiting the program.
-
+```
 
 # Future Improvements
 
