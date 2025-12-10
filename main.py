@@ -1,10 +1,10 @@
-# Python Library Management System
-
+# Store books, members, and issued books
 books = []
 members = []
 borrowed_books = {}
 
-def add_book():
+# Add new book to the library
+def AddBook():
     book_id = input("Enter book ID: ")
     title = input("Enter book title: ")
     author = input("Enter author name: ")
@@ -12,18 +12,21 @@ def add_book():
     books.append([book_id, title, author, quantity])
     print("Book added successfully!")
 
-def register_member():
+# Register a new library member
+def RegisterMember():
     member_id = input("Enter member ID: ")
     name = input("Enter member name: ")
     members.append([member_id, name])
     borrowed_books[member_id] = []
     print("Member registered successfully!")
 
-def issue_book():
+# Issue a book to a member
+def IssueBook():
     member_id = input("Enter member ID: ")
     book_id = input("Enter book ID: ")
     
     member_exists = False
+    # Check if member exists
     for member in members:
         if member[0] == member_id:
             member_exists = True
@@ -33,6 +36,7 @@ def issue_book():
         print("Member not found!")
         return
 
+    # Find book and issue if available
     for book in books:
         if book[0] == book_id:
             if book[3] > 0:
@@ -46,14 +50,17 @@ def issue_book():
     
     print("Book not found!")
 
-def return_book():
+# Return a borrowed book
+def ReturnBook():
     member_id = input("Enter member ID: ")
     book_id = input("Enter book ID: ")
 
+    # Check if member exists
     if member_id not in borrowed_books:
         print("Member not found!")
         return
 
+    # Remove returned book
     if book_id in borrowed_books[member_id]:
         borrowed_books[member_id].remove(book_id)
         for book in books:
@@ -64,7 +71,8 @@ def return_book():
     else:
         print("This book was not borrowed by the member!")
 
-def check_book_availability():
+# Check availability of a specific book
+def CheckBookAvailability():
     book_id = input("Enter book ID to check availability: ")
 
     for book in books:
@@ -75,16 +83,19 @@ def check_book_availability():
             return
     print("Book not found!")
 
-def display_books():
+# Display all books
+def DisplayBooks():
     print("\nBooks in the library:")
     for book in books:
         print("ID: " + book[0] + ", Title: " + book[1] + ", Author: " + book[2] + ", Available Copies: " + str(book[3]))
 
-def display_members():
+# Display all members
+def DisplayMembers():
     print("\nLibrary members:")
     for member in members:
         print("ID: " + member[0] + ", Name: " + member[1])
 
+# Main program loop (menu)
 def main():
     while True:
         print("\nLibrary Management System")
@@ -99,24 +110,25 @@ def main():
         choice = input("Enter your choice: ")
         
         if choice == "1":
-            add_book()
+            AddBook()
         elif choice == "2":
-            register_member()
+            RegisterMember()
         elif choice == "3":
-            issue_book()
+            IssueBook()
         elif choice == "4":
-            return_book()
+            ReturnBook()
         elif choice == "5":
-            check_book_availability()
+            CheckBookAvailability()
         elif choice == "6":
-            display_books()
+            DisplayBooks()
         elif choice == "7":
-            display_members()
+            DisplayMembers()
         elif choice == "8":
             print("Exiting the program.")
             break
         else:
             print("Invalid choice. Please try again.")
 
+# entry point
 if __name__ == "__main__":
     main()
