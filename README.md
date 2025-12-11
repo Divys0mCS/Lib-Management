@@ -55,7 +55,7 @@ All functionality is driven through a simple menu loop in the console.
 1. Make sure Python is installed on your system.
 
 2. Download or clone this repository:
-3.       gh repo clone Divys0mCS/Lib-Management
+``` $ gh repo clone Divys0mCS/Lib-Management ```
 
 
 4. Open a terminal/command prompt inside the project folder.
