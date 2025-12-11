@@ -54,11 +54,13 @@ All functionality is driven through a simple menu loop in the console.
 
 1. Make sure Python is installed on your system.
 
-2. Download or clone this repository.
+2. Download or clone this repository:
+3.       gh repo clone Divys0mCS/Lib-Management
 
-3. Open a terminal/command prompt inside the project folder.
 
-4. Run the script using:
+4. Open a terminal/command prompt inside the project folder.
+
+5. Run the script using:
 
 ```bash
 $ python library_management.py
